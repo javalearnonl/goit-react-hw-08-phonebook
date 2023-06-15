@@ -42,7 +42,7 @@ export default function SignIn() {
       }
 
       setIsSubmitting(false);
-    }, 1000);
+    }, 3000);
   };
 
   return (
