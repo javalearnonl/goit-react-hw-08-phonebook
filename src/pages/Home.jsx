@@ -1,4 +1,3 @@
-import img from '../images/PhoneBook.png';
 import Button from '@mui/material/Button';
 import LoginIcon from '@mui/icons-material/Login';
 import HowToRegIcon from '@mui/icons-material/HowToReg';
