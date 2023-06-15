@@ -33,16 +33,17 @@ export default function SignIn() {
           })
         );
 
-        if (response.status !== 200) {
+        if (response !== 200 && !response.status) {
           setErrorMessage('Ошибка: Неверный email или пароль');
-          window.alert('Ошибка: Неверный email или пароль');
+        } else {
+          // Successful login, perform any necessary actions
         }
       } catch (error) {
         setErrorMessage('Произошла ошибка. Пожалуйста, попробуйте позже.');
       }
 
       setIsSubmitting(false);
-    }, 3000);
+    }, 1000);
   };
 
   return (
